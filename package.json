@@ -1,0 +1,23 @@
+{
+  "name": "Self-documented-LCL-boilerplate",
+  "version": "0.1.0",
+  "description": "This is a boilerplate for an automatically-documented external Linked Code Library (LCL)",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "docs": "node_modules/.bin/jsdoc --configure jsdoc.conf --verbose",
+    "docs-commit": "git subtree push --prefix docs/text-analytics-template-codelibrary origin gh-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConfirmitASA/Self-documented-LCL-boilerplate.git"
+  },
+  "author": "ConfirmitASA",
+  "license": "",
+  "homepage": "https://github.com/ConfirmitASA/Self-documented-LCL-boilerplate#readme",
+  "devDependencies": {
+    "docdash": "^0.4.0",
+    "jsdoc": "^3.4.0"
+  },
+  "dependencies": {}
+}
