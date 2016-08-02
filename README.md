@@ -1,7 +1,7 @@
 # Self documented LCL boilerplate
 
 Since `Linked Code Library (LCL)` uses GitHub to store code, it's been decided that we could also use GitHub pages to store automatically generated documentation of the code as a good API reference. 
-Auto-generated documentation uses [JSDoc3](http://usejsdoc.org/index.html) inline code comments as a source for documentation and generates HTML files that have hyperlinks and examples of the code.
+Auto-generated documentation uses [JSDoc3](http://usejsdoc.org/index.html) (make sure you check their [documentation](http://usejsdoc.org/index.html)) inline code comments as a source for documentation and generates HTML files that have hyperlinks and examples of the code.
 Further after generating the code, it may be stored on GitHub pages. 
 
 Current configuration doesn't analyse the code, since JScript isn't recognized as a valid JavaScript by the interpreter that reads the code, thus it only analyses comments for the code, so anything you don't describe won't appear in the documentation.
@@ -16,6 +16,11 @@ Then you need to configure `jsdoc.conf` that does all documents generation. You 
 Only these files will be documented. It's good practice to leave `README.md` and `package.json` included. Thus `README.md` will be displayed as a homepage.
 
 When all this is done you're good to initialize your boilerplate by executing `npm install` in command line (assuming you've already navigated to your project folder in command line). Now your project is set up.
+
+## Comment
+
+Make sure you read [JSDoc3 documentation](http://usejsdoc.org/index.html) and take a look at the source code of our example file [`JSON_exampleClass.js`](https://confirmitasa.github.io/Self-documented-LCL-boilerplate/0.1.0/JSON_exampleClass.js.html) and the [output docs](https://confirmitasa.github.io/Self-documented-LCL-boilerplate/0.1.0/JSON.html) to get an idea how to document Reportal Scripting code.
+Since JSDoc is tuned not to read the code, only comments, you need to be as explicit as necessary for JSDoc to understand what exactly your function does. So you might need to be more descriptive than you would be describing generic JavaScript code.
 
 ## Generate
 
