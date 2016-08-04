@@ -9,6 +9,7 @@ Besides, Reportal doesn't know anything about files in nested folders, so all co
 
 ## Install
 
+Make sure you have `npm` (Node.JS) and `Git` installed on your machine.
 Clone this repository into your empty project and configure `package.json` for it. Basically you need to change fields `name`, `version`, `description`, `repository.url`, `author`, `description` and `homepage`
 Keep note, that all documentation when generated resides in `./docs/name/version` relative to the root (where `package.json` is). So you also need to configure `"docs-commit": "git subtree push --prefix docs/YOUR_PROJECT_NAME origin gh-pages"` in `package.json` by replacing `YOUR_PROJECT_NAME` with whatever you specified in the `name` section of the config.
 
